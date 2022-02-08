@@ -1,22 +1,107 @@
-.lectures{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    .lecture-videos{
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 30px;
-        div{
-            padding: 100px;
-            border-radius: 10px;
-           background-image: url(../../images/youtube-lecture.png);
-           background-size: cover;
-           background-position: center;
+@import '../../styles/mixins.scss';
+
+.lectures {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .lecture-videos {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+    .video {
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 10px;
+      width: 100%;
+      overflow: hidden;
+      min-height: 250px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      position: relative;
+      @include large-desktop{
+          min-height: 300px;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 63.4%,
+          rgba(0, 0, 0, 0.6) 100%
+        );
+      }
+      & > * {
+        z-index: 2;
+      }
+      &:hover {
+        .youtube {
+          opacity: 1;
         }
-        .first{
-            grid-row-start: 1;
-            grid-row-end: 3;
+      }
+      .youtube {
+        transition: all 0.3s;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.452);
+        img {
+          width: 15%;
         }
+      }
+      & > h1 {
+        font-family: "Poppins";
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+      .date {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
     }
+    & > a:first-child {
+        padding: 20px 30px;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+      .date{
+          font-size: 16px;
+      }
+    }
+  }
 }

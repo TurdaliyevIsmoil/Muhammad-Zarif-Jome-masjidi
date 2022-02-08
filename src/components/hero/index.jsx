@@ -16,6 +16,7 @@ export default function (props) {
     const dataImg = [
         require('../../images/hero.png'),
         require('../../images/hero2.jpg'),
+        require('../../images/hero3.jpg.jpg'),
     ]
 
     return (<header className='hero'>

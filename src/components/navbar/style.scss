@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 nav.navbar {
   position: relative;
   z-index: 2;
@@ -16,7 +17,10 @@ nav.navbar {
         width: 440px;
         list-style-type: none;
         li {
-          margin-right: 20px;
+          margin: 0 10px;
+          @include large-desktop{
+            margin-right: 30px;
+        }
           a {
             font-family: "Poppins";
             font-style: normal;

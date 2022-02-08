@@ -1,0 +1,22 @@
+.lectures{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .lecture-videos{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+        div{
+            padding: 100px;
+            border-radius: 10px;
+           background-image: url(../../images/youtube-lecture.png);
+           background-size: cover;
+           background-position: center;
+        }
+        .first{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+}

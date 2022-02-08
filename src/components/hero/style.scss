@@ -1,0 +1,28 @@
+.hero {
+  .react-multi-carousel-track,
+  .react-multi-carousel-list {
+    min-height: calc(100vh - 95px);
+  }
+  .react-multi-carousel-dot-list {
+      .react-multi-carousel-dot--active{
+          button{
+              background-color: #fff;
+          }
+      }
+      li{
+          margin-bottom: 10px;
+        button{
+            border: none;
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.37);
+        }
+      }
+  }
+}
+.background-image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+nav.navbar {
+  position: relative;
+  z-index: 2;
+  .top {
+    height: 20px;
+    width: 100%;
+  }
+  .main {
+    background-color: $main-color !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .container {
+      justify-content: space-between;
+      .menu {
+        width: 440px;
+        list-style-type: none;
+        li {
+          margin-right: 20px;
+          a {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            text-transform: capitalize;
+            color: #ffffff;
+            position: relative;
+            cursor: pointer;
+            &::before{
+              transition: all .4s cubic-bezier(.58,.02,.45,1.25);
+              position: absolute;
+              content: '';
+              width: 0%;
+              height: 2px;
+              bottom: -7px;
+              left: 0;
+              background-color: #fff;
+              opacity: .8;
+            }
+            &:hover::before{
+              width: 110%;
+            }
+          }
+        }
+      }
+      .logo {
+        width: 170px;
+        position: relative;
+        img{
+          position: absolute;
+          width: 100%;
+          height: auto;
+          top: -38px;
+        }
+      }
+    }
+  }
+}

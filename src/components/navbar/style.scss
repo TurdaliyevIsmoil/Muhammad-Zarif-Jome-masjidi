@@ -2,25 +2,49 @@
 @import "../../styles/mixins.scss";
 nav.navbar {
   position: relative;
-  z-index: 2;
+  z-index: 99;
+  color: $main-color;
   .top {
     height: 20px;
     width: 100%;
+    & > a {
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #004811;
+    }
+    .social-media {
+      gap: 20px;
+      img {
+        height: 12px;
+      }
+    }
   }
   .main {
     background-color: $main-color !important;
     padding-top: 25px;
     padding-bottom: 25px;
+    @media (max-width: 991px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
     .container {
       justify-content: space-between;
-      .menu {
+      menu.menu {
+        gap: 30px;
         width: 440px;
         list-style-type: none;
-        li {
-          margin: 0 10px;
-          @include large-desktop{
-            margin-right: 30px;
+        @include laptop {
+          display: none;
         }
+        @include large-desktop {
+          gap: 40px;
+        }
+        li {
           a {
             font-family: "Poppins";
             font-style: normal;
@@ -32,18 +56,18 @@ nav.navbar {
             color: #ffffff;
             position: relative;
             cursor: pointer;
-            &::before{
-              transition: all .4s cubic-bezier(.58,.02,.45,1.25);
+            &::before {
+              transition: all 0.4s cubic-bezier(0.58, 0.02, 0.45, 1.25);
               position: absolute;
-              content: '';
+              content: "";
               width: 0%;
               height: 2px;
               bottom: -7px;
               left: 0;
               background-color: #fff;
-              opacity: .8;
+              opacity: 0.8;
             }
-            &:hover::before{
+            &:hover::before {
               width: 110%;
             }
           }
@@ -52,11 +76,84 @@ nav.navbar {
       .logo {
         width: 170px;
         position: relative;
-        img{
+        @include laptop {
+          width: 30%;
+          min-width: 130px;
+          img {
+            top: -40px !important;
+          }
+        }
+        @include tablet {
+          img {
+            top: -35px !important;
+          }
+        }
+        img {
           position: absolute;
           width: 100%;
           height: auto;
           top: -38px;
+        }
+      }
+      .mobile {
+        flex-direction: column;
+        list-style: none;
+        color: white;
+        display: none;
+        @include laptop {
+          display: flex;
+          position: fixed;
+          transition: all 0.3s;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          gap: 40px;
+          height: 100%;
+          background-color: rgba(10, 10, 10, 0.925);
+          z-index: 999999;
+          backdrop-filter: blur(10px);
+          justify-content: center;
+          &.active {
+            left: 0;
+          }
+          & > li:last-child {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+            transition: all 0.3s;
+            &:hover {
+              cursor: pointer;
+              opacity: 0.5;
+            }
+          }
+          a {
+            font-size: 18px;
+            text-decoration: none !important;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+      .mobile-btn {
+        display: none;
+        @include laptop {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          img {
+            transition: all 0.3s;
+            &:hover {
+              opacity: 0.6;
+            }
+            width: 40px;
+          }
+        }
+        @include tablet {
+          img {
+            width: 30px !important;
+          }
         }
       }
     }

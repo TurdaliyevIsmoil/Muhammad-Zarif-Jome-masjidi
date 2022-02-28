@@ -1,22 +1,45 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef4586d2.css",
-    "main.js": "/static/js/main.f45916a0.js",
+    "main.css": "/static/css/main.f2fec14d.css",
+    "main.js": "/static/js/main.c8767d0d.js",
     "static/media/hero.png": "/static/media/hero.2ca220e4cca89e1abf95.png",
-    "static/media/youtube-lecture.png": "/static/media/youtube-lecture.9289cfe1d7dceb902ca8.png",
+    "static/media/hero3.jpg.jpg": "/static/media/hero3.jpg.74a63a27f915d25fb603.jpg",
     "static/media/hero2.jpg": "/static/media/hero2.921f60cdbc971be101c2.jpg",
     "static/media/new.png": "/static/media/new.a1e775dc3d122e507746.png",
+    "static/media/new-1.png": "/static/media/new-1.74b8f484bd23c029a8fe.png",
+    "static/media/family-3.png": "/static/media/family-3.fec0179bd274179f51f5.png",
+    "static/media/new-4.png": "/static/media/new-4.3c76667a04cad2436f2e.png",
     "static/media/Gilroy-Bold.ttf": "/static/media/Gilroy-Bold.bf181b073b4773f45c8e.ttf",
+    "static/media/family-2.png": "/static/media/family-2.c9c3f1094970a50b160b.png",
+    "static/media/woman-2.png": "/static/media/woman-2.ea1dfef35e722ff8a650.png",
+    "static/media/woman-3.png": "/static/media/woman-3.f3b7517c09f273e2ddc8.png",
+    "static/media/article-3.png": "/static/media/article-3.bae96aac77424f686c49.png",
+    "static/media/new-2.png": "/static/media/new-2.e6f0d44d393fa3b0d2bf.png",
+    "static/media/article-2.png": "/static/media/article-2.21e0c8176ec695992e99.png",
+    "static/media/article-5.png": "/static/media/article-5.21e0c8176ec695992e99.png",
+    "static/media/family-5.png": "/static/media/family-5.dc6c3d597846c4487c38.png",
+    "static/media/new-3.png": "/static/media/new-3.02c9eaf9a3b9f78b858f.png",
+    "static/media/family-6.png": "/static/media/family-6.63946cec0d66b37e7f6f.png",
+    "static/media/article-1.png": "/static/media/article-1.640e101786e1531592f9.png",
+    "static/media/article-4.png": "/static/media/article-4.640e101786e1531592f9.png",
+    "static/media/family-4.png": "/static/media/family-4.9478f01c80b705f2c5a5.png",
+    "static/media/new-5.png": "/static/media/new-5.fde6baffd0d65794d55f.png",
+    "static/media/woman.png": "/static/media/woman.88e7cf676261b456f3e0.png",
+    "static/media/book.png": "/static/media/book.dc062bfa4f30f0fb13ab.png",
+    "static/media/family.png": "/static/media/family.ff598b209d582e4791c9.png",
     "static/media/logo.png": "/static/media/logo.aed556cfef95f05f5c6d.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/instagram.svg": "/static/media/instagram.4c0e2de37c7f712cb5b64c57e5fc6797.svg",
+    "static/media/youtube.svg": "/static/media/youtube.a58b8e655dd01c3d8e6f8ecfc4f52b1d.svg",
+    "static/media/telegram.svg": "/static/media/telegram.d54335eef7de59713713ea3095008802.svg",
     "index.html": "/index.html",
-    "main.ef4586d2.css.map": "/static/css/main.ef4586d2.css.map",
-    "main.f45916a0.js.map": "/static/js/main.f45916a0.js.map"
+    "main.f2fec14d.css.map": "/static/css/main.f2fec14d.css.map",
+    "main.c8767d0d.js.map": "/static/js/main.c8767d0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef4586d2.css",
-    "static/js/main.f45916a0.js"
+    "static/css/main.f2fec14d.css",
+    "static/js/main.c8767d0d.js"
   ]
 }

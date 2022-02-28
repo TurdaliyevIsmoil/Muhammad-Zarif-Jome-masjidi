@@ -1,6 +1,7 @@
-@import '../../styles/mixins.scss';
+@import "../../styles/mixins.scss";
 
 .lectures {
+  z-index: 1;
   padding-top: 120px;
   padding-bottom: 120px;
   .lecture-videos {
@@ -8,7 +9,11 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 30px;
+    grid-gap: 20px;
+    @include large-tablet {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
     .video {
       text-decoration: none;
       padding: 10px 15px;
@@ -23,8 +28,28 @@
       align-items: flex-start;
       flex-direction: column;
       position: relative;
-      @include large-desktop{
-          min-height: 300px;
+      @include desktop {
+        min-height: 200px !important;
+      }
+      @include laptop {
+        min-height: 170px !important;
+      }
+      @include large-tablet {
+        min-height: 300px !important;
+      }
+      @include phone {
+        padding: 10px !important;
+        min-height: 250px !important;
+        h1{
+          font-size: 18px !important;
+        }
+        .date{
+          font-size: 12px !important;
+        }
+      }
+
+      @include large-desktop {
+        min-height: 250px;
       }
       &::before {
         position: absolute;
@@ -87,9 +112,12 @@
       }
     }
     & > a:first-child {
-        padding: 20px 30px;
+      padding: 20px 30px;
       grid-row-start: 1;
       grid-row-end: 3;
+      @include large-tablet{
+        grid-row: auto / auto;
+      }
       h1 {
         font-family: Poppins;
         font-style: normal;
@@ -99,8 +127,8 @@
         text-transform: capitalize;
         color: #ffffff;
       }
-      .date{
-          font-size: 16px;
+      .date {
+        font-size: 16px;
       }
     }
   }

@@ -1,0 +1,76 @@
+.woman-page {
+  .title {
+    margin-top: 100px;
+  }
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 60px;
+    @media (max-width: 767px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .article {
+        img {
+          width: 100% !important;
+        }
+        .content {
+          gap: 5px !important;
+        }
+        &-desc {
+          font-size: 12px !important;
+        }
+        &-title {
+          font-size: 16px !important;
+        }
+      }
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+    .article {
+      gap: 20px;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      &-title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: capitalize;
+        color: #000000;
+      }
+      &-img {
+        width: 285px;
+      }
+      &-date {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #555555;
+      }
+      &-desc {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #555555;
+      }
+    }
+  }
+}

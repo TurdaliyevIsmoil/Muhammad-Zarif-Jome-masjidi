@@ -10,24 +10,24 @@ export default function (props) {
         },
         {
             title: 'Toshkent shaxar bosh imom xatibi ustoz shayx sayyid roxmatulloh termiziy...',
-            img: require('../../images/new.png')
+            img: require('../../images/new-2.png')
         },
         {
-            title: 'Someting somethingest some things',
-            img: require('../../images/new.png')
+            title: 'tojikiston muftiysi tabrik yo’lladi',
+            img: require('../../images/new-3.png')
         },
         {
-            title: 'Someting somethingest some things',
-            img: require('../../images/new.png')
+            title: 'falastin elschisi muftiy xazratlarini qutladi',
+            img: require('../../images/new-4.png')
         },
         {
-            title: 'Someting somethingest some things',
-            img: require('../../images/new.png')
+            title: 'moskva elchisi albir xazrat nuriddin domla xoliqnazarovni qutladi',
+            img: require('../../images/new-5.png')
         },
         {
-            title: 'Someting somethingest some things',
-            img: require('../../images/new.png')
-        },
+            title: 'diyonat ishlari boshqarmasi raxbarining tabrigi qabul qilindi',
+            img: require('../../images/new-1.png')
+        }
     ]
     return (<div className='news'>
         <div className="container">

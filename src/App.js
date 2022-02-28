@@ -3,6 +3,10 @@ import Hero from "./components/hero";
 import Lecture from "./components/lecture";
 import News from "./components/news";
 import Articles from "./components/articles";
+import WomanPage from "./components/womanPage";
+import Library from "./components/library";
+import { articles, family } from "./components/articles/datas";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -11,7 +15,11 @@ function App() {
       <Hero />
       <Lecture />
       <News />
-      <Articles />
+      <Articles data={articles} />
+      <WomanPage />
+      <Library />
+      <Articles data={family} />
+      <Footer />
     </>
   );
 }

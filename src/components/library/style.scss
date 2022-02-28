@@ -1,0 +1,65 @@
+.library {
+  margin-bottom: 80px;
+  .title {
+    margin-top: 80px;
+  }
+  .books {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+    @media (max-width: 1199px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      justify-content: start !important;
+    }
+    .book {
+      align-items: flex-start;
+      gap: 20px;
+      @media (max-width: 767px) {
+        justify-content: start !important;
+      }
+      .content {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+      }
+      img {
+        width: 155px;
+        object-fit: cover;
+        height: 211px;
+      }
+      &-title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 25px;
+        text-transform: capitalize;
+
+        color: #000000;
+      }
+      &-author {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 125.5%;
+        text-transform: capitalize;
+        color: #555555;
+      }
+      a {
+        text-decoration: none;
+        padding: 10px 30px;
+        color: #fff;
+        background: #004811;
+        border-radius: 3px;
+      }
+    }
+  }
+}
